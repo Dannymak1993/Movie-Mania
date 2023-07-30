@@ -1,7 +1,7 @@
 import './App.css';
 
 const App = () => {
-  const name = "Danny";
+  const name = null;
 
   return (
     <div className="App">
@@ -11,7 +11,7 @@ const App = () => {
           test
         </>
       ) : (
-        test
+        <h1>test</h1>
       )}
     </div>
   );
