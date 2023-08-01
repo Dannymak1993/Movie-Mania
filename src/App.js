@@ -6,7 +6,7 @@ const App = () => {
 
   useEffect(() => {
     setCounter(100);
-  })
+  }, [])
 
   return (
     <div className="App">
