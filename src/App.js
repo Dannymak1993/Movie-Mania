@@ -5,7 +5,7 @@ const App = () => {
   const [counter, setCounter] = useState(0);
 
   useEffect(() => {
-    alert ('Reload')
+    setCounter(100);
   })
 
   return (
