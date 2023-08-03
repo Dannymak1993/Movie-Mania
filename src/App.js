@@ -37,10 +37,11 @@ const App = () => {
                     onClick={() => searchMovies(searchTerm)}
                 />
             </div>
-
+                {/* if else statement */}
             {movies?.length > 0 ? (
                 <div className="container">
                     {movies.map((movie) => (
+                        //pass movie as props
                         <MovieCard movie={movie} />
                     ))}
                 </div>
