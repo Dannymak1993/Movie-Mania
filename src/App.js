@@ -7,8 +7,9 @@ import "./App.css";
 const API_URL = "http://www.omdbapi.com?apikey=b6003d8a";
 
 const App = () => {
-    const [searchTerm, setSearchTerm] = useState("");
+    // multiple states
     const [movies, setMovies] = useState([]);
+    const [searchTerm, setSearchTerm] = useState("");
 
     useEffect(() => {
         searchMovies("Batman");
@@ -27,9 +28,9 @@ const App = () => {
 
             <div className="search">
                 <input
+                    placeholder="Search for your favorite movies"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    placeholder="Search for your favorite movies"
                 />
                 <img
                     src={SearchIcon}
@@ -37,7 +38,7 @@ const App = () => {
                     onClick={() => searchMovies(searchTerm)}
                 />
             </div>
-                {/* if else statement */}
+            {/* if else statement */}
             {movies?.length > 0 ? (
                 <div className="container">
                     {movies.map((movie) => (
